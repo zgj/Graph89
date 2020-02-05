@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:seek="http://schemas.android.com/apk/res-auto"
+    xmlns:seek="com.graph89.controls.SeekBarPreference"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 

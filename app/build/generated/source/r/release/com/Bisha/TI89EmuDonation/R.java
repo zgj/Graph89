@@ -23,22 +23,6 @@ public final class R {
         public static final int skin89Values=0x7f06000b;
     }
     public static final class attr {
-        /** <p>Must be an integer value, such as "<code>100</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int maxValue=0x7f010001;
-        /** <p>Must be an integer value, such as "<code>100</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int minValue=0x7f010000;
     }
     public static final class dimen {
         public static final int ambilwarna_hsvHeight=0x7f040000;
@@ -120,24 +104,23 @@ containing a value of this type.
         public static final int rom_manager_add_rom_deleterom=0x7f070030;
         public static final int rom_manager_add_rom_layout=0x7f07002f;
         public static final int rom_manager_add_rom_title=0x7f070035;
-        public static final int rom_manager_main_add_rom=0x7f07003d;
-        public static final int rom_manager_main_norommessage=0x7f07003f;
-        public static final int rom_manager_main_rom_list=0x7f07003e;
+        public static final int rom_manager_main_add_rom=0x7f07003c;
+        public static final int rom_manager_main_norommessage=0x7f07003e;
+        public static final int rom_manager_main_rom_list=0x7f07003d;
         public static final int rom_manager_main_startup_defaults_layout=0x7f070036;
-        public static final int rom_manager_main_startup_defaults_s_landscape=0x7f07003c;
-        public static final int rom_manager_main_startup_defaults_s_portrait=0x7f07003a;
+        public static final int rom_manager_main_startup_defaults_s_landscape=0x7f07003b;
+        public static final int rom_manager_main_startup_defaults_s_portrait=0x7f070039;
         public static final int rom_manager_main_startup_defaults_t1=0x7f070037;
         public static final int rom_manager_main_startup_defaults_t2=0x7f070038;
-        public static final int rom_manager_main_startup_defaults_t2a=0x7f070039;
-        public static final int rom_manager_main_startup_defaults_t3=0x7f07003b;
-        public static final int save_received_file_layout=0x7f070040;
-        public static final int save_received_file_path=0x7f070042;
-        public static final int save_received_file_readonly_path=0x7f070041;
-        public static final int take_screenshot_layout=0x7f070043;
-        public static final int take_screenshot_path=0x7f070045;
-        public static final int take_screenshot_readonly_path=0x7f070044;
-        public static final int whats_new_layout=0x7f070046;
-        public static final int whats_new_text=0x7f070047;
+        public static final int rom_manager_main_startup_defaults_t3=0x7f07003a;
+        public static final int save_received_file_layout=0x7f07003f;
+        public static final int save_received_file_path=0x7f070041;
+        public static final int save_received_file_readonly_path=0x7f070040;
+        public static final int take_screenshot_layout=0x7f070042;
+        public static final int take_screenshot_path=0x7f070044;
+        public static final int take_screenshot_readonly_path=0x7f070043;
+        public static final int whats_new_layout=0x7f070045;
+        public static final int whats_new_text=0x7f070046;
     }
     public static final class layout {
         public static final int aboutscreen=0x7f030000;
@@ -163,49 +146,4 @@ containing a value of this type.
     public static final class style {
         public static final int Graph89Theme=0x7f050000;
     }
-    public static final class styleable {
-        /** Attributes that can be used with a seek.
-           <p>Includes the following attributes:</p>
-           <table>
-           <colgroup align="left" />
-           <colgroup align="left" />
-           <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #seek_maxValue com.Bisha.TI89EmuDonation:maxValue}</code></td><td></td></tr>
-           <tr><td><code>{@link #seek_minValue com.Bisha.TI89EmuDonation:minValue}</code></td><td></td></tr>
-           </table>
-           @see #seek_maxValue
-           @see #seek_minValue
-         */
-        public static final int[] seek = {
-            0x7f010000, 0x7f010001
-        };
-        /**
-          <p>This symbol is the offset where the {@link com.Bisha.TI89EmuDonation.R.attr#maxValue}
-          attribute's value can be found in the {@link #seek} array.
-
-
-          <p>Must be an integer value, such as "<code>100</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name com.Bisha.TI89EmuDonation:maxValue
-        */
-        public static final int seek_maxValue = 1;
-        /**
-          <p>This symbol is the offset where the {@link com.Bisha.TI89EmuDonation.R.attr#minValue}
-          attribute's value can be found in the {@link #seek} array.
-
-
-          <p>Must be an integer value, such as "<code>100</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name com.Bisha.TI89EmuDonation:minValue
-        */
-        public static final int seek_minValue = 0;
-    };
 }

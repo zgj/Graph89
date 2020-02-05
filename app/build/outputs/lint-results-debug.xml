@@ -2,6 +2,42 @@
 <issues format="4">
 
     <issue
+        id="NamespaceTypo"
+        severity="Fatal"
+        message="Suspicious namespace: should start with `http://`"
+        category="Correctness"
+        priority="8"
+        summary="Misspelled namespace declaration"
+        explanation="Accidental misspellings in namespace declarations can lead to some very obscure error messages. This check looks for potential misspellings to help track these down."
+        errorLine1="    xmlns:seek=&quot;com.graph89.controls.SeekBarPreference&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/runner/work/Graph89/Graph89/app/src/main/res/layout/settings.xml"
+            line="3"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/rom_manager_main_startup_defaults_t2`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                android:id=&quot;@+id/rom_manager_main_startup_defaults_t2&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/home/runner/work/Graph89/Graph89/app/src/main/res/layout/rom_manager_main.xml"
+            line="48"
+            column="17"/>
+        <location
+            file="/home/runner/work/Graph89/Graph89/app/src/main/res/layout/rom_manager_main.xml"
+            line="34"
+            column="17"/>
+    </issue>
+
+    <issue
         id="DefaultLocale"
         severity="Warning"
         message="Implicitly using the default locale is a common source of bugs: Use `toLowerCase(Locale)` instead"

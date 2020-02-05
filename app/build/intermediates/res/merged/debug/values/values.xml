@@ -59,7 +59,6 @@
         <item>Classic 89</item>
         <item>Classic 89 Titanium</item>
     </string-array>
-    <declare-styleable name="seek"><attr format="integer" name="minValue"/><attr format="integer" name="maxValue"/></declare-styleable>
     <dimen name="ambilwarna_hsvHeight">240dp</dimen>
     <dimen name="ambilwarna_hsvWidth">240dp</dimen>
     <dimen name="ambilwarna_hueWidth">30dp</dimen>

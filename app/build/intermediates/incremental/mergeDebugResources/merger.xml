@@ -7,10 +7,7 @@
         <item>Default</item>
         <item>Classic 89</item>
         <item>Classic 89 Titanium</item>
-    </string-array></file><file path="/home/runner/work/Graph89/Graph89/app/src/main/res/values/attrs.xml" qualifiers=""><declare-styleable name="seek">
-        <attr format="integer" name="minValue"/>
-        <attr format="integer" name="maxValue"/>
-    </declare-styleable></file><file path="/home/runner/work/Graph89/Graph89/app/src/main/res/values/themes.xml" qualifiers=""><style name="Graph89Theme" parent="@android:style/Theme.NoTitleBar.Fullscreen"/></file><file path="/home/runner/work/Graph89/Graph89/app/src/main/res/values/dimens.xml" qualifiers=""><dimen name="padding_large">16dp</dimen><dimen name="padding_medium">8dp</dimen><dimen name="padding_small">8dp</dimen></file><file path="/home/runner/work/Graph89/Graph89/app/src/main/res/values/skin_200.xml" qualifiers=""><string-array name="skin200Values">
+    </string-array></file><file path="/home/runner/work/Graph89/Graph89/app/src/main/res/values/themes.xml" qualifiers=""><style name="Graph89Theme" parent="@android:style/Theme.NoTitleBar.Fullscreen"/></file><file path="/home/runner/work/Graph89/Graph89/app/src/main/res/values/dimens.xml" qualifiers=""><dimen name="padding_large">16dp</dimen><dimen name="padding_medium">8dp</dimen><dimen name="padding_small">8dp</dimen></file><file path="/home/runner/work/Graph89/Graph89/app/src/main/res/values/skin_200.xml" qualifiers=""><string-array name="skin200Values">
         <item>Classic V200</item>
         <item>Classic 92 Plus</item>
     </string-array><string-array name="skin200Array">
