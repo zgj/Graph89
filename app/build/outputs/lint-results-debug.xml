@@ -44,132 +44,6 @@ If you want the methods to just perform ASCII replacement, for example to conver
     <issue
         id="InlinedApi"
         severity="Warning"
-        message="Field requires API level 16 (current min is 8): `android.view.View#SYSTEM_UI_FLAG_LAYOUT_STABLE`"
-        category="Correctness"
-        priority="6"
-        summary="Using inlined constants on older versions"
-        explanation="This check scans through all the Android API field references in the application and flags certain constants, such as static final integers and Strings, which were introduced in later versions. These will actually be copied into the class files rather than being referenced, which means that the value is available even when running on older devices. In some cases that&apos;s fine, and in other cases it can result in a runtime crash or incorrect behavior. It depends on the context, so consider the code carefully and device whether it&apos;s safe and can be suppressed or whether the code needs tbe guarded.
-
-If you really want to use this API and don&apos;t need to support older devices just set the `minSdkVersion` in your `build.gradle` or `AndroidManifest.xml` files.
-If your code is *deliberately* accessing newer APIs, and you have ensured (e.g. with conditional execution) that this code will only ever be called on a supported platform, then you can annotate your class or method with the `@TargetApi` annotation specifying the local minimum SDK to apply, such as `@TargetApi(11)`, such that this check considers 11 rather than your manifest file&apos;s minimum SDK as the required API level.
-"
-        errorLine1="     View.SYSTEM_UI_FLAG_LAYOUT_STABLE"
-        errorLine2="     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-        quickfix="studio,adt">
-        <location
-            file="/home/runner/work/Graph89/Graph89/app/src/main/java/com/graph89/emulationcore/EmulatorActivity.java"
-            line="266"
-            column="6"/>
-    </issue>
-
-    <issue
-        id="InlinedApi"
-        severity="Warning"
-        message="Field requires API level 16 (current min is 8): `android.view.View#SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION`"
-        category="Correctness"
-        priority="6"
-        summary="Using inlined constants on older versions"
-        explanation="This check scans through all the Android API field references in the application and flags certain constants, such as static final integers and Strings, which were introduced in later versions. These will actually be copied into the class files rather than being referenced, which means that the value is available even when running on older devices. In some cases that&apos;s fine, and in other cases it can result in a runtime crash or incorrect behavior. It depends on the context, so consider the code carefully and device whether it&apos;s safe and can be suppressed or whether the code needs tbe guarded.
-
-If you really want to use this API and don&apos;t need to support older devices just set the `minSdkVersion` in your `build.gradle` or `AndroidManifest.xml` files.
-If your code is *deliberately* accessing newer APIs, and you have ensured (e.g. with conditional execution) that this code will only ever be called on a supported platform, then you can annotate your class or method with the `@TargetApi` annotation specifying the local minimum SDK to apply, such as `@TargetApi(11)`, such that this check considers 11 rather than your manifest file&apos;s minimum SDK as the required API level.
-"
-        errorLine1="     | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION"
-        errorLine2="       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-        quickfix="studio,adt">
-        <location
-            file="/home/runner/work/Graph89/Graph89/app/src/main/java/com/graph89/emulationcore/EmulatorActivity.java"
-            line="267"
-            column="8"/>
-    </issue>
-
-    <issue
-        id="InlinedApi"
-        severity="Warning"
-        message="Field requires API level 16 (current min is 8): `android.view.View#SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN`"
-        category="Correctness"
-        priority="6"
-        summary="Using inlined constants on older versions"
-        explanation="This check scans through all the Android API field references in the application and flags certain constants, such as static final integers and Strings, which were introduced in later versions. These will actually be copied into the class files rather than being referenced, which means that the value is available even when running on older devices. In some cases that&apos;s fine, and in other cases it can result in a runtime crash or incorrect behavior. It depends on the context, so consider the code carefully and device whether it&apos;s safe and can be suppressed or whether the code needs tbe guarded.
-
-If you really want to use this API and don&apos;t need to support older devices just set the `minSdkVersion` in your `build.gradle` or `AndroidManifest.xml` files.
-If your code is *deliberately* accessing newer APIs, and you have ensured (e.g. with conditional execution) that this code will only ever be called on a supported platform, then you can annotate your class or method with the `@TargetApi` annotation specifying the local minimum SDK to apply, such as `@TargetApi(11)`, such that this check considers 11 rather than your manifest file&apos;s minimum SDK as the required API level.
-"
-        errorLine1="     | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN"
-        errorLine2="       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-        quickfix="studio,adt">
-        <location
-            file="/home/runner/work/Graph89/Graph89/app/src/main/java/com/graph89/emulationcore/EmulatorActivity.java"
-            line="268"
-            column="8"/>
-    </issue>
-
-    <issue
-        id="InlinedApi"
-        severity="Warning"
-        message="Field requires API level 14 (current min is 8): `android.view.View#SYSTEM_UI_FLAG_HIDE_NAVIGATION`"
-        category="Correctness"
-        priority="6"
-        summary="Using inlined constants on older versions"
-        explanation="This check scans through all the Android API field references in the application and flags certain constants, such as static final integers and Strings, which were introduced in later versions. These will actually be copied into the class files rather than being referenced, which means that the value is available even when running on older devices. In some cases that&apos;s fine, and in other cases it can result in a runtime crash or incorrect behavior. It depends on the context, so consider the code carefully and device whether it&apos;s safe and can be suppressed or whether the code needs tbe guarded.
-
-If you really want to use this API and don&apos;t need to support older devices just set the `minSdkVersion` in your `build.gradle` or `AndroidManifest.xml` files.
-If your code is *deliberately* accessing newer APIs, and you have ensured (e.g. with conditional execution) that this code will only ever be called on a supported platform, then you can annotate your class or method with the `@TargetApi` annotation specifying the local minimum SDK to apply, such as `@TargetApi(11)`, such that this check considers 11 rather than your manifest file&apos;s minimum SDK as the required API level.
-"
-        errorLine1="     | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION"
-        errorLine2="       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-        quickfix="studio,adt">
-        <location
-            file="/home/runner/work/Graph89/Graph89/app/src/main/java/com/graph89/emulationcore/EmulatorActivity.java"
-            line="269"
-            column="8"/>
-    </issue>
-
-    <issue
-        id="InlinedApi"
-        severity="Warning"
-        message="Field requires API level 16 (current min is 8): `android.view.View#SYSTEM_UI_FLAG_FULLSCREEN`"
-        category="Correctness"
-        priority="6"
-        summary="Using inlined constants on older versions"
-        explanation="This check scans through all the Android API field references in the application and flags certain constants, such as static final integers and Strings, which were introduced in later versions. These will actually be copied into the class files rather than being referenced, which means that the value is available even when running on older devices. In some cases that&apos;s fine, and in other cases it can result in a runtime crash or incorrect behavior. It depends on the context, so consider the code carefully and device whether it&apos;s safe and can be suppressed or whether the code needs tbe guarded.
-
-If you really want to use this API and don&apos;t need to support older devices just set the `minSdkVersion` in your `build.gradle` or `AndroidManifest.xml` files.
-If your code is *deliberately* accessing newer APIs, and you have ensured (e.g. with conditional execution) that this code will only ever be called on a supported platform, then you can annotate your class or method with the `@TargetApi` annotation specifying the local minimum SDK to apply, such as `@TargetApi(11)`, such that this check considers 11 rather than your manifest file&apos;s minimum SDK as the required API level.
-"
-        errorLine1="     | View.SYSTEM_UI_FLAG_FULLSCREEN"
-        errorLine2="       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-        quickfix="studio,adt">
-        <location
-            file="/home/runner/work/Graph89/Graph89/app/src/main/java/com/graph89/emulationcore/EmulatorActivity.java"
-            line="270"
-            column="8"/>
-    </issue>
-
-    <issue
-        id="InlinedApi"
-        severity="Warning"
-        message="Field requires API level 19 (current min is 8): `android.view.View#SYSTEM_UI_FLAG_IMMERSIVE_STICKY`"
-        category="Correctness"
-        priority="6"
-        summary="Using inlined constants on older versions"
-        explanation="This check scans through all the Android API field references in the application and flags certain constants, such as static final integers and Strings, which were introduced in later versions. These will actually be copied into the class files rather than being referenced, which means that the value is available even when running on older devices. In some cases that&apos;s fine, and in other cases it can result in a runtime crash or incorrect behavior. It depends on the context, so consider the code carefully and device whether it&apos;s safe and can be suppressed or whether the code needs tbe guarded.
-
-If you really want to use this API and don&apos;t need to support older devices just set the `minSdkVersion` in your `build.gradle` or `AndroidManifest.xml` files.
-If your code is *deliberately* accessing newer APIs, and you have ensured (e.g. with conditional execution) that this code will only ever be called on a supported platform, then you can annotate your class or method with the `@TargetApi` annotation specifying the local minimum SDK to apply, such as `@TargetApi(11)`, such that this check considers 11 rather than your manifest file&apos;s minimum SDK as the required API level.
-"
-        errorLine1="     | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY"
-        errorLine2="       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-        quickfix="studio,adt">
-        <location
-            file="/home/runner/work/Graph89/Graph89/app/src/main/java/com/graph89/emulationcore/EmulatorActivity.java"
-            line="271"
-            column="8"/>
-    </issue>
-
-    <issue
-        id="InlinedApi"
-        severity="Warning"
         message="Field requires API level 9 (current min is 8): `android.content.pm.ActivityInfo#SCREEN_ORIENTATION_FULL_SENSOR`"
         category="Correctness"
         priority="6"
@@ -184,7 +58,7 @@ If your code is *deliberately* accessing newer APIs, and you have ensured (e.g. 
         quickfix="studio,adt">
         <location
             file="/home/runner/work/Graph89/Graph89/app/src/main/java/com/graph89/emulationcore/EmulatorActivity.java"
-            line="370"
+            line="357"
             column="27"/>
     </issue>
 
@@ -205,7 +79,7 @@ If your code is *deliberately* accessing newer APIs, and you have ensured (e.g. 
         quickfix="studio,adt">
         <location
             file="/home/runner/work/Graph89/Graph89/app/src/main/java/com/graph89/emulationcore/EmulatorActivity.java"
-            line="371"
+            line="358"
             column="31"/>
     </issue>
 
@@ -226,7 +100,7 @@ If your code is *deliberately* accessing newer APIs, and you have ensured (e.g. 
         quickfix="studio,adt">
         <location
             file="/home/runner/work/Graph89/Graph89/app/src/main/java/com/graph89/emulationcore/EmulatorActivity.java"
-            line="372"
+            line="359"
             column="32"/>
     </issue>
 
@@ -247,7 +121,7 @@ If your code is *deliberately* accessing newer APIs, and you have ensured (e.g. 
         quickfix="studio,adt">
         <location
             file="/home/runner/work/Graph89/Graph89/app/src/main/java/com/graph89/emulationcore/EmulatorActivity.java"
-            line="698"
+            line="685"
             column="25"/>
     </issue>
 
@@ -268,7 +142,7 @@ If your code is *deliberately* accessing newer APIs, and you have ensured (e.g. 
         quickfix="studio,adt">
         <location
             file="/home/runner/work/Graph89/Graph89/app/src/main/java/com/graph89/emulationcore/EmulatorActivity.java"
-            line="766"
+            line="753"
             column="18"/>
     </issue>
 
@@ -289,33 +163,8 @@ If your code is *deliberately* accessing newer APIs, and you have ensured (e.g. 
         quickfix="studio,adt">
         <location
             file="/home/runner/work/Graph89/Graph89/app/src/main/java/com/graph89/emulationcore/EmulatorActivity.java"
-            line="770"
+            line="757"
             column="18"/>
-    </issue>
-
-    <issue
-        id="NewApi"
-        severity="Error"
-        message="Call requires API level 11 (current min is 8): `android.view.View#setSystemUiVisibility`"
-        category="Correctness"
-        priority="6"
-        summary="Calling new methods on older versions"
-        explanation="This check scans through all the Android API calls in the application and warns about any calls that are not available on *all* versions targeted by this application (according to its minimum SDK attribute in the manifest).
-
-If you really want to use this API and don&apos;t need to support older devices just set the `minSdkVersion` in your `build.gradle` or `AndroidManifest.xml` files.
-
-If your code is *deliberately* accessing newer APIs, and you have ensured (e.g. with conditional execution) that this code will only ever be called on a supported platform, then you can annotate your class or method with the `@TargetApi` annotation specifying the local minimum SDK to apply, such as `@TargetApi(11)`, such that this check considers 11 rather than your manifest file&apos;s minimum SDK as the required API level.
-
-If you are deliberately setting `android:` attributes in style definitions, make sure you place this in a `values-vNN` folder in order to avoid running into runtime conflicts on certain devices where manufacturers have added custom attributes whose ids conflict with the new ones on later platforms.
-
-Similarly, you can use tools:targetApi=&quot;11&quot; in an XML file to indicate that the element will only be inflated in an adequate context."
-        errorLine1="   getWindow().getDecorView().setSystemUiVisibility("
-        errorLine2="                              ~~~~~~~~~~~~~~~~~~~~~"
-        quickfix="studio,adt">
-        <location
-            file="/home/runner/work/Graph89/Graph89/app/src/main/java/com/graph89/emulationcore/EmulatorActivity.java"
-            line="265"
-            column="31"/>
     </issue>
 
     <issue

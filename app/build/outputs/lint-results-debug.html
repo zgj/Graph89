@@ -18,8 +18,8 @@ document.getElementById(id+'Link').style.display = 'none';
 <body>
 <h1>Lint Report</h1>
 <div class="titleSeparator"></div>
-Check performed at Wed Feb 05 05:50:01 UTC 2020.<br/>
-1 errors and 167 warnings found:<br/><br/>
+Check performed at Wed Feb 05 06:10:56 UTC 2020.<br/>
+0 errors and 161 warnings found:<br/><br/>
 <table class="overview">
 <tr><td></td><td class="categoryColumn"><a href="#Correctness">Correctness</a>
 </td></tr>
@@ -28,12 +28,8 @@ Check performed at Wed Feb 05 05:50:01 UTC 2020.<br/>
 <a href="#DefaultLocale">DefaultLocale: Implied default locale in case conversion</a>
 </td></tr>
 <tr>
-<td class="countColumn">12</td><td class="issueColumn"><img border="0" align="top" src="lint-results-debug_files/lint-warning.png" alt="Warning" />
+<td class="countColumn">6</td><td class="issueColumn"><img border="0" align="top" src="lint-results-debug_files/lint-warning.png" alt="Warning" />
 <a href="#InlinedApi">InlinedApi: Using inlined constants on older versions</a>
-</td></tr>
-<tr>
-<td class="countColumn">1</td><td class="issueColumn"><img border="0" align="top" src="lint-results-debug_files/lint-error.png" alt="Error" />
-<a href="#NewApi">NewApi: Calling new methods on older versions</a>
 </td></tr>
 <tr>
 <td class="countColumn">2</td><td class="issueColumn"><img border="0" align="top" src="lint-results-debug_files/lint-warning.png" alt="Warning" />
@@ -178,105 +174,54 @@ If you want the methods to just perform ASCII replacement, for example to conver
 <div class="id"><a href="#" title="Return to top">InlinedApi: Using inlined constants on older versions</a><div class="issueSeparator"></div>
 </div>
 <div class="warningslist">
-<span class="location"><a href="../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java">../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java</a>:266</span>: <span class="message">Field requires API level 16 (current min is 8): <code>android.view.View#SYSTEM_UI_FLAG_LAYOUT_STABLE</code></span><br /><pre class="errorlines">
-<span class="lineno"> 263</span> 		super.onWindowFocusChanged(hasFocus);
-<span class="lineno"> 264</span> 		if(hasFocus){
-<span class="lineno"> 265</span> 			getWindow().getDecorView().setSystemUiVisibility(
-<span class="lineno"> 266</span> 					<span class="errorspan">View.SYSTEM_UI_FLAG_LAYOUT_STABLE</span>
-<span class="lineno"> 267</span> 					| View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-<span class="lineno"> 268</span> 					| View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+<span class="location"><a href="../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java">../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java</a>:357</span>: <span class="message">Field requires API level 9 (current min is 8): <code>android.content.pm.ActivityInfo#SCREEN_ORIENTATION_FULL_SENSOR</code></span><br /><pre class="errorlines">
+<span class="lineno"> 354</span> 	{
+<span class="lineno"> 355</span> 		boolean newAndroid = Build.VERSION.SDK_INT > Build.VERSION_CODES.FROYO;
+<span class="lineno"> 356</span> 
+<span class="lineno"> 357</span> 		int auto = newAndroid ? <span class="errorspan">ActivityInfo.SCREEN_ORIENTATION_FULL_SENSOR : ActivityInfo.SCREEN_ORIENTATION_SENSOR;</span>
+<span class="lineno"> 358</span> 		int portrait = newAndroid ? ActivityInfo.SCREEN_ORIENTATION_SENSOR_PORTRAIT : ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
+<span class="lineno"> 359</span> 		int landscape = newAndroid ? ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE : ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;
 </pre>
-<span class="location"><a href="../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java">../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java</a>:267</span>: <span class="message">Field requires API level 16 (current min is 8): <code>android.view.View#SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION</code></span><br /><pre class="errorlines">
-<span class="lineno"> 264</span> 		if(hasFocus){
-<span class="lineno"> 265</span> 			getWindow().getDecorView().setSystemUiVisibility(
-<span class="lineno"> 266</span> 					View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-<span class="lineno"> 267</span> 					| <span class="errorspan">View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION</span>
-<span class="lineno"> 268</span> 					| View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-<span class="lineno"> 269</span> 					| View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+<span class="location"><a href="../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java">../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java</a>:358</span>: <span class="message">Field requires API level 9 (current min is 8): <code>android.content.pm.ActivityInfo#SCREEN_ORIENTATION_SENSOR_PORTRAIT</code></span><br /><pre class="errorlines">
+<span class="lineno"> 355</span> 		boolean newAndroid = Build.VERSION.SDK_INT > Build.VERSION_CODES.FROYO;
+<span class="lineno"> 356</span> 
+<span class="lineno"> 357</span> 		int auto = newAndroid ? ActivityInfo.SCREEN_ORIENTATION_FULL_SENSOR : ActivityInfo.SCREEN_ORIENTATION_SENSOR;
+<span class="lineno"> 358</span> 		int portrait = newAndroid ? <span class="errorspan">ActivityInfo.SCREEN_ORIENTATION_SENSOR_PORTRAIT : ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;</span>
+<span class="lineno"> 359</span> 		int landscape = newAndroid ? ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE : ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;
+<span class="lineno"> 360</span> 
 </pre>
-<span class="location"><a href="../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java">../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java</a>:268</span>: <span class="message">Field requires API level 16 (current min is 8): <code>android.view.View#SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN</code></span><br /><pre class="errorlines">
-<span class="lineno"> 265</span> 			getWindow().getDecorView().setSystemUiVisibility(
-<span class="lineno"> 266</span> 					View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-<span class="lineno"> 267</span> 					| View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-<span class="lineno"> 268</span> 					| <span class="errorspan">View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN</span>
-<span class="lineno"> 269</span> 					| View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-<span class="lineno"> 270</span> 					| View.SYSTEM_UI_FLAG_FULLSCREEN
+<span class="location"><a href="../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java">../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java</a>:359</span>: <span class="message">Field requires API level 9 (current min is 8): <code>android.content.pm.ActivityInfo#SCREEN_ORIENTATION_SENSOR_LANDSCAPE</code></span><br /><pre class="errorlines">
+<span class="lineno"> 356</span> 
+<span class="lineno"> 357</span> 		int auto = newAndroid ? ActivityInfo.SCREEN_ORIENTATION_FULL_SENSOR : ActivityInfo.SCREEN_ORIENTATION_SENSOR;
+<span class="lineno"> 358</span> 		int portrait = newAndroid ? ActivityInfo.SCREEN_ORIENTATION_SENSOR_PORTRAIT : ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
+<span class="lineno"> 359</span> 		int landscape = newAndroid ? <span class="errorspan">ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE : ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;</span>
+<span class="lineno"> 360</span> 
+<span class="lineno"> 361</span> 		int calcType = ActiveInstance.CalculatorType;
 </pre>
-<span class="location"><a href="../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java">../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java</a>:269</span>: <span class="message">Field requires API level 14 (current min is 8): <code>android.view.View#SYSTEM_UI_FLAG_HIDE_NAVIGATION</code></span><br /><pre class="errorlines">
-<span class="lineno"> 266</span> 					View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-<span class="lineno"> 267</span> 					| View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-<span class="lineno"> 268</span> 					| View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-<span class="lineno"> 269</span> 					| <span class="errorspan">View.SYSTEM_UI_FLAG_HIDE_NAVIGATION</span>
-<span class="lineno"> 270</span> 					| View.SYSTEM_UI_FLAG_FULLSCREEN
-<span class="lineno"> 271</span> 					| View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+<span class="location"><a href="../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java">../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java</a>:685</span>: <span class="message">Field requires API level 9 (current min is 8): <code>android.content.pm.ActivityInfo#SCREEN_ORIENTATION_SENSOR_PORTRAIT</code></span><br /><pre class="errorlines">
+<span class="lineno"> 682</span> 	private boolean IsPortrait()
+<span class="lineno"> 683</span> 	{
+<span class="lineno"> 684</span> 		//fix
+<span class="lineno"> 685</span> 		return Orientation == <span class="errorspan">ActivityInfo.SCREEN_ORIENTATION_SENSOR_PORTRAIT;</span>
+<span class="lineno"> 686</span> 	}
+<span class="lineno"> 687</span> 
 </pre>
-<span class="location"><a href="../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java">../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java</a>:270</span>: <span class="message">Field requires API level 16 (current min is 8): <code>android.view.View#SYSTEM_UI_FLAG_FULLSCREEN</code></span><br /><pre class="errorlines">
-<span class="lineno"> 267</span> 					| View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-<span class="lineno"> 268</span> 					| View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-<span class="lineno"> 269</span> 					| View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-<span class="lineno"> 270</span> 					| <span class="errorspan">View.SYSTEM_UI_FLAG_FULLSCREEN</span>
-<span class="lineno"> 271</span> 					| View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
-<span class="lineno"> 272</span> 			);
+<span class="location"><a href="../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java">../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java</a>:753</span>: <span class="message">Field requires API level 9 (current min is 8): <code>android.content.pm.ActivityInfo#SCREEN_ORIENTATION_SENSOR_PORTRAIT</code></span><br /><pre class="errorlines">
+<span class="lineno"> 750</span> //fix
+<span class="lineno"> 751</span> 		if (AndroidDeviceScreenDimension.Height > AndroidDeviceScreenDimension.Width)
+<span class="lineno"> 752</span> 		{
+<span class="lineno"> 753</span> 			Orientation = <span class="errorspan">ActivityInfo.SCREEN_ORIENTATION_SENSOR_PORTRAIT;</span>
+<span class="lineno"> 754</span> 		}
+<span class="lineno"> 755</span> 		else
 </pre>
-<button id="InlinedApiDivLink" onclick="reveal('InlinedApiDiv');" />+ 7 More Occurrences...</button>
-<div id="InlinedApiDiv" style="display: none">
-<span class="location"><a href="../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java">../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java</a>:271</span>: <span class="message">Field requires API level 19 (current min is 8): <code>android.view.View#SYSTEM_UI_FLAG_IMMERSIVE_STICKY</code></span><br /><pre class="errorlines">
-<span class="lineno"> 268</span> 					| View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-<span class="lineno"> 269</span> 					| View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-<span class="lineno"> 270</span> 					| View.SYSTEM_UI_FLAG_FULLSCREEN
-<span class="lineno"> 271</span> 					| <span class="errorspan">View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY</span>
-<span class="lineno"> 272</span> 			);
-<span class="lineno"> 273</span> 		}
+<span class="location"><a href="../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java">../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java</a>:757</span>: <span class="message">Field requires API level 9 (current min is 8): <code>android.content.pm.ActivityInfo#SCREEN_ORIENTATION_SENSOR_LANDSCAPE</code></span><br /><pre class="errorlines">
+<span class="lineno"> 754</span> 		}
+<span class="lineno"> 755</span> 		else
+<span class="lineno"> 756</span> 		{
+<span class="lineno"> 757</span> 			Orientation = <span class="errorspan">ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE;</span>
+<span class="lineno"> 758</span> 		}
+<span class="lineno"> 759</span> 	}
 </pre>
-<span class="location"><a href="../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java">../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java</a>:370</span>: <span class="message">Field requires API level 9 (current min is 8): <code>android.content.pm.ActivityInfo#SCREEN_ORIENTATION_FULL_SENSOR</code></span><br /><pre class="errorlines">
-<span class="lineno"> 367</span> 	{
-<span class="lineno"> 368</span> 		boolean newAndroid = Build.VERSION.SDK_INT > Build.VERSION_CODES.FROYO;
-<span class="lineno"> 369</span> 
-<span class="lineno"> 370</span> 		int auto = newAndroid ? <span class="errorspan">ActivityInfo.SCREEN_ORIENTATION_FULL_SENSOR : ActivityInfo.SCREEN_ORIENTATION_SENSOR;</span>
-<span class="lineno"> 371</span> 		int portrait = newAndroid ? ActivityInfo.SCREEN_ORIENTATION_SENSOR_PORTRAIT : ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
-<span class="lineno"> 372</span> 		int landscape = newAndroid ? ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE : ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;
-</pre>
-<span class="location"><a href="../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java">../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java</a>:371</span>: <span class="message">Field requires API level 9 (current min is 8): <code>android.content.pm.ActivityInfo#SCREEN_ORIENTATION_SENSOR_PORTRAIT</code></span><br /><pre class="errorlines">
-<span class="lineno"> 368</span> 		boolean newAndroid = Build.VERSION.SDK_INT > Build.VERSION_CODES.FROYO;
-<span class="lineno"> 369</span> 
-<span class="lineno"> 370</span> 		int auto = newAndroid ? ActivityInfo.SCREEN_ORIENTATION_FULL_SENSOR : ActivityInfo.SCREEN_ORIENTATION_SENSOR;
-<span class="lineno"> 371</span> 		int portrait = newAndroid ? <span class="errorspan">ActivityInfo.SCREEN_ORIENTATION_SENSOR_PORTRAIT : ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;</span>
-<span class="lineno"> 372</span> 		int landscape = newAndroid ? ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE : ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;
-<span class="lineno"> 373</span> 
-</pre>
-<span class="location"><a href="../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java">../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java</a>:372</span>: <span class="message">Field requires API level 9 (current min is 8): <code>android.content.pm.ActivityInfo#SCREEN_ORIENTATION_SENSOR_LANDSCAPE</code></span><br /><pre class="errorlines">
-<span class="lineno"> 369</span> 
-<span class="lineno"> 370</span> 		int auto = newAndroid ? ActivityInfo.SCREEN_ORIENTATION_FULL_SENSOR : ActivityInfo.SCREEN_ORIENTATION_SENSOR;
-<span class="lineno"> 371</span> 		int portrait = newAndroid ? ActivityInfo.SCREEN_ORIENTATION_SENSOR_PORTRAIT : ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
-<span class="lineno"> 372</span> 		int landscape = newAndroid ? <span class="errorspan">ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE : ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;</span>
-<span class="lineno"> 373</span> 
-<span class="lineno"> 374</span> 		int calcType = ActiveInstance.CalculatorType;
-</pre>
-<span class="location"><a href="../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java">../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java</a>:698</span>: <span class="message">Field requires API level 9 (current min is 8): <code>android.content.pm.ActivityInfo#SCREEN_ORIENTATION_SENSOR_PORTRAIT</code></span><br /><pre class="errorlines">
-<span class="lineno"> 695</span> 	private boolean IsPortrait()
-<span class="lineno"> 696</span> 	{
-<span class="lineno"> 697</span> 		//fix
-<span class="lineno"> 698</span> 		return Orientation == <span class="errorspan">ActivityInfo.SCREEN_ORIENTATION_SENSOR_PORTRAIT;</span>
-<span class="lineno"> 699</span> 	}
-<span class="lineno"> 700</span> 
-</pre>
-<span class="location"><a href="../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java">../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java</a>:766</span>: <span class="message">Field requires API level 9 (current min is 8): <code>android.content.pm.ActivityInfo#SCREEN_ORIENTATION_SENSOR_PORTRAIT</code></span><br /><pre class="errorlines">
-<span class="lineno"> 763</span> //fix
-<span class="lineno"> 764</span> 		if (AndroidDeviceScreenDimension.Height > AndroidDeviceScreenDimension.Width)
-<span class="lineno"> 765</span> 		{
-<span class="lineno"> 766</span> 			Orientation = <span class="errorspan">ActivityInfo.SCREEN_ORIENTATION_SENSOR_PORTRAIT;</span>
-<span class="lineno"> 767</span> 		}
-<span class="lineno"> 768</span> 		else
-</pre>
-<span class="location"><a href="../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java">../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java</a>:770</span>: <span class="message">Field requires API level 9 (current min is 8): <code>android.content.pm.ActivityInfo#SCREEN_ORIENTATION_SENSOR_LANDSCAPE</code></span><br /><pre class="errorlines">
-<span class="lineno"> 767</span> 		}
-<span class="lineno"> 768</span> 		else
-<span class="lineno"> 769</span> 		{
-<span class="lineno"> 770</span> 			Orientation = <span class="errorspan">ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE;</span>
-<span class="lineno"> 771</span> 		}
-<span class="lineno"> 772</span> 	}
-</pre>
-</div>
 </div>
 <div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ & Eclipse/ADT&nbsp;<img alt="Fix" border="0" align="top" src="lint-results-debug_files/lint-run.png" />
 <br>
@@ -292,39 +237,6 @@ If your code is <b>deliberately</b> accessing newer APIs, and you have ensured (
 
 </div>
 <br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "InlinedApi" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
-</div>
-<a name="NewApi"></a>
-<div class="issue">
-<div class="id"><a href="#" title="Return to top">NewApi: Calling new methods on older versions</a><div class="issueSeparator"></div>
-</div>
-<div class="warningslist">
-<span class="location"><a href="../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java">../../src/main/java/com/graph89/emulationcore/EmulatorActivity.java</a>:265</span>: <span class="message">Call requires API level 11 (current min is 8): <code>android.view.View#setSystemUiVisibility</code></span><br /><pre class="errorlines">
-<span class="lineno"> 262</span> 	public void onWindowFocusChanged(boolean hasFocus){
-<span class="lineno"> 263</span> 		super.onWindowFocusChanged(hasFocus);
-<span class="lineno"> 264</span> 		if(hasFocus){
-<span class="lineno"> 265</span> 			getWindow().getDecorView().<span class="errorspan">setSystemUiVisibility(</span>
-<span class="lineno"> 266</span> 					View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-<span class="lineno"> 267</span> 					| View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-</pre>
-</div>
-<div class="metadata">Note: This issue has an associated quickfix operation in Android Studio/IntelliJ & Eclipse/ADT&nbsp;<img alt="Fix" border="0" align="top" src="lint-results-debug_files/lint-run.png" />
-<br>
-Priority: 6 / 10<br/>
-Category: Correctness</div>
-Severity: <span class="error">Error</span><div class="summary">
-Explanation: Calling new methods on older versions.</div>
-<div class="explanation">
-This check scans through all the Android API calls in the application and warns about any calls that are not available on <b>all</b> versions targeted by this application (according to its minimum SDK attribute in the manifest).<br/>
-<br/>
-If you really want to use this API and don't need to support older devices just set the <code>minSdkVersion</code> in your <code>build.gradle</code> or <code>AndroidManifest.xml</code> files.<br/>
-<br/>
-If your code is <b>deliberately</b> accessing newer APIs, and you have ensured (e.g. with conditional execution) that this code will only ever be called on a supported platform, then you can annotate your class or method with the <code>@TargetApi</code> annotation specifying the local minimum SDK to apply, such as <code>@TargetApi(11)</code>, such that this check considers 11 rather than your manifest file's minimum SDK as the required API level.<br/>
-<br/>
-If you are deliberately setting <code>android:</code> attributes in style definitions, make sure you place this in a <code>values-vNN</code> folder in order to avoid running into runtime conflicts on certain devices where manufacturers have added custom attributes whose ids conflict with the new ones on later platforms.<br/>
-<br/>
-Similarly, you can use tools:targetApi="11" in an XML file to indicate that the element will only be inflated in an adequate context.
-</div>
-<br/><div class="moreinfo">More info: </div><br/>To suppress this error, use the issue id "NewApi" as explained in the <a href="#SuppressInfo">Suppressing Warnings and Errors</a> section.<br/>
 </div>
 <a name="OldTargetApi"></a>
 <div class="issue">
