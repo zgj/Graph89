@@ -1,4 +1,5 @@
 Graph 89
+
 ===
 Graph 89 is a
 [Ti graphing calculators](https://education.ti.com/en/us/products#!product=graphing-calculators)
