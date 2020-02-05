@@ -1,0 +1,78 @@
+[
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/layout/dialog_slider.xml",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/layout/dialog_slider.xml"
+    },
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/layout/rom_manager_add_rom.xml",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/layout/rom_manager_add_rom.xml"
+    },
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/layout/ambilwarna_pref_widget.xml",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/layout/ambilwarna_pref_widget.xml"
+    },
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/layout/emulator_main.xml",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/layout/emulator_main.xml"
+    },
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/layout/settings.xml",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/layout/settings.xml"
+    },
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/layout/file_picker_empty_view.xml",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/layout/file_picker_empty_view.xml"
+    },
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/layout/file_picker_main.xml",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/layout/file_picker_main.xml"
+    },
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/layout/rom_manager_main.xml",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/layout/rom_manager_main.xml"
+    },
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/layout/save_received_file.xml",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/layout/save_received_file.xml"
+    },
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/layout/controlbar.xml",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/layout/controlbar.xml"
+    },
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/layout/aboutscreen.xml",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/layout/aboutscreen.xml"
+    },
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/layout/file_picker_list_item.xml",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/layout/file_picker_list_item.xml"
+    },
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/layout/take_screenshot.xml",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/layout/take_screenshot.xml"
+    },
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/layout/backup_manager_main.xml",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/layout/backup_manager_main.xml"
+    },
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/layout/backup_manager_restore_backup.xml",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/layout/backup_manager_restore_backup.xml"
+    },
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/layout/backup_list_item.xml",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/layout/backup_list_item.xml"
+    },
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/layout/backup_manager_add_backup.xml",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/layout/backup_manager_add_backup.xml"
+    },
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/layout/whats_new.xml",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/layout/whats_new.xml"
+    },
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/layout/ambilwarna_dialog.xml",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/layout/ambilwarna_dialog.xml"
+    }
+]

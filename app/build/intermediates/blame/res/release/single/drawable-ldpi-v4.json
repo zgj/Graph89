@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/drawable-ldpi-v4/romfile.png",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/drawable-ldpi/romfile.png"
+    },
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/drawable-ldpi-v4/appfile.png",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/drawable-ldpi/appfile.png"
+    },
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/drawable-ldpi-v4/ambilwarna_arrow_down.png",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/drawable-ldpi/ambilwarna_arrow_down.png"
+    },
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/drawable-ldpi-v4/ic_menu_smalltiles.png",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/drawable-ldpi/ic_menu_smalltiles.png"
+    },
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/drawable-ldpi-v4/ambilwarna_target.png",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/drawable-ldpi/ambilwarna_target.png"
+    },
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/drawable-ldpi-v4/ic_launcher.png",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/drawable-ldpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/drawable-ldpi-v4/ic_menu_change_order.png",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/drawable-ldpi/ic_menu_change_order.png"
+    },
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/drawable-ldpi-v4/ambilwarna_arrow_right.png",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/drawable-ldpi/ambilwarna_arrow_right.png"
+    },
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/drawable-ldpi-v4/folder.png",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/drawable-ldpi/folder.png"
+    },
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/drawable-ldpi-v4/ambilwarna_cursor.png",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/drawable-ldpi/ambilwarna_cursor.png"
+    }
+]

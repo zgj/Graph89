@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="calctypeArray">
+        <item>-Select Type-</item>
+        <item>TI89</item>
+        <item>TI89 Titanium</item>
+        <item>TI92</item>
+        <item>TI92 Plus</item>
+        <item>Voyage 200</item>
+        <item>TI84 Plus SE</item>
+        <item>TI84 Plus</item>
+        <item>TI83 Plus SE</item>
+        <item>TI83 Plus</item>
+        <item>TI83</item>
+    </string-array>
+    <string-array name="lcd_types">
+        <item>Solid</item>
+        <item>Dot Matrix</item>
+    </string-array>
+    <string-array name="lcd_values">
+        <item>Solid</item>
+        <item>Dot Matrix</item>
+    </string-array>
+    <string-array name="orientationArray">
+        <item>Auto</item>
+        <item>Portrait</item>
+        <item>Landscape</item>
+    </string-array>
+    <string-array name="orientationValues">
+        <item>Auto</item>
+        <item>Portrait</item>
+        <item>Landscape</item>
+    </string-array>
+    <string-array name="restoreTypeArray">
+        <item>Merge with existing</item>
+        <item>Create new instances</item>
+    </string-array>
+    <string-array name="skin200Array">
+        <item>Classic V200</item>
+        <item>Classic 92 Plus</item>
+    </string-array>
+    <string-array name="skin200Values">
+        <item>Classic V200</item>
+        <item>Classic 92 Plus</item>
+    </string-array>
+    <string-array name="skin84Array">
+        <item>Classic 84</item>
+    </string-array>
+    <string-array name="skin84Values">
+        <item>Classic 84</item>
+    </string-array>
+    <string-array name="skin89Array">
+        <item>Default</item>
+        <item>Classic 89</item>
+        <item>Classic 89 Titanium</item>
+    </string-array>
+    <string-array name="skin89Values">
+        <item>Default</item>
+        <item>Classic 89</item>
+        <item>Classic 89 Titanium</item>
+    </string-array>
+    <declare-styleable name="seek"><attr format="integer" name="minValue"/><attr format="integer" name="maxValue"/></declare-styleable>
+    <dimen name="ambilwarna_hsvHeight">240dp</dimen>
+    <dimen name="ambilwarna_hsvWidth">240dp</dimen>
+    <dimen name="ambilwarna_hueWidth">30dp</dimen>
+    <dimen name="ambilwarna_spacer">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <style name="Graph89Theme" parent="@android:style/Theme.NoTitleBar.Fullscreen"/>
+</resources>

@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/drawable/ambilwarna_target.png",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/drawable/ambilwarna_target.png"
+    },
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/drawable/ambilwarna_arrow_right.png",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/drawable/ambilwarna_arrow_right.png"
+    },
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/drawable/ambilwarna_arrow_down.png",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/drawable/ambilwarna_arrow_down.png"
+    },
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/drawable/ambilwarna_hue.png",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/drawable/ambilwarna_hue.png"
+    },
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/drawable/ambilwarna_cursor.png",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/drawable/ambilwarna_cursor.png"
+    },
+    {
+        "merged": "/home/runner/work/Graph89/Graph89/app/build/intermediates/res/merged/release/drawable/backbutton.png",
+        "source": "/home/runner/work/Graph89/Graph89/app/src/main/res/drawable/backbutton.png"
+    }
+]
