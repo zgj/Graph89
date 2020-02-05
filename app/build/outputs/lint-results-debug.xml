@@ -480,12 +480,12 @@ Note: This check does not only apply to attributes. For example, some tags can b
     <issue
         id="GradleDependency"
         severity="Warning"
-        message="Old buildToolsVersion 25.0.0; recommended version is 25.0.3 or later"
+        message="Old buildToolsVersion 24.0.1; recommended version is 24.0.3 or later"
         category="Correctness"
         priority="4"
         summary="Obsolete Gradle Dependency"
         explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
-        errorLine1="    buildToolsVersion &quot;25.0.0&quot;"
+        errorLine1="    buildToolsVersion &quot;24.0.1&quot;"
         errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~"
         quickfix="studio">
         <location

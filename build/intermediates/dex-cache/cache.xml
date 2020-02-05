@@ -8,5 +8,12 @@
         sha1="1f96456ca233dec780aa224bff076d8e8bca3908">
         <dex dex="/home/runner/work/Graph89/Graph89/app/build/intermediates/pre-dexed/debug/gson-2.2.2_46f4ef447fa0019b0a5115976b1884ff565b4ae2.jar" />
     </item>
+    <item
+        jar="/home/runner/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.2/1f96456ca233dec780aa224bff076d8e8bca3908/gson-2.2.2.jar"
+        jumboMode="false"
+        revision="24.0.1"
+        sha1="1f96456ca233dec780aa224bff076d8e8bca3908">
+        <dex dex="/home/runner/work/Graph89/Graph89/app/build/intermediates/pre-dexed/debug/gson-2.2.2_46f4ef447fa0019b0a5115976b1884ff565b4ae2.jar" />
+    </item>
 
 </items>
