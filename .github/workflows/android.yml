@@ -19,3 +19,15 @@ jobs:
         java-version: 1.8
     - name: Build with Gradle
       run: ./gradlew build
+    - name: commit
+      run: |
+        echo ${{ github.ref }}
+        git add .
+        git config --local user.email "test@test.com"
+        git config --local user.name "test123"
+        git commit -m "ci: Automated build push" -a | exit 0
+    - name: push
+      if: github.ref == 'refs/heads/master'
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
